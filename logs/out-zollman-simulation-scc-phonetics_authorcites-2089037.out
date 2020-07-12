@@ -1,0 +1,8 @@
+wheat13
+Starting job 2089037
+┌ Warning: Skipping unknown XML element 'key' - further warnings will be suppressed
+└ @ GraphIO.GraphML ~/.julia/packages/GraphIO/IpSAL/src/GraphML/GraphML.jl:92
+┌ Warning: Skipping unknown node 'data' - further warnings will be suppressed
+└ @ GraphIO.GraphML ~/.julia/packages/GraphIO/IpSAL/src/GraphML/GraphML.jl:31
+Activating environment at `~/experiments/Project.toml`
+graph:'graphs/phonetics_authorcites.graphml', threads: 8
