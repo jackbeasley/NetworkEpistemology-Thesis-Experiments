@@ -1,0 +1,99 @@
+% Stanford University PhD thesis style -- modifications to the report style
+% This is unofficial so you should always double check against the
+% Registrar's office rules
+% See http://library.stanford.edu/research/bibliography-management/latex-and-bibtex
+% 
+% Example of use below
+% See the suthesis-2e.sty file for documentation
+%
+\documentclass{report}
+\usepackage{suthesis-2e}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{graphicx}
+\dept{Philosophy}
+\bibliography{references.bib}
+
+% Redefine \includegraphics so that, unless explicit options are
+% given, the image width will not exceed the width or the height of the page.
+% Images get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+ \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+    0.9\textheight
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+\title{Empirically-Motivated Models for Computational Epistemology}
+\author{Jack Beasley}
+\principaladviser{Helen E. Longino}
+\coprincipaladviser{Thomas Icard}
+ 
+\beforepreface
+\prefacesection{Acknowledgments}
+
+This thesis would not have been possible without the countless
+conversations, suggestions, feedback, and encouragement of my advisors
+Prof.~Helen Longino and Prof.~Thomas Icard.
+
+I started working on this project over a year ago now as a project
+studying retractions in science, which led me head-on into an empirical
+social science project and away from the interdisciplinary mix of
+philosophy and computer science that I wanted to work on. Prof.~Longino
+helped introduce me to computational philosophy through the work of
+Kevin Zollman, which eventually led to this thesis. Once on that topic,
+the many conversations I had with both Prof.~Longino and Prof.~Icard
+brought me different perspectives and viewpoints that not only shaped my
+views expressed in this thesis but helped me start to understand what
+philosophy research is about in the first place.
+
+I must also thank both the philosophy and computer science departments
+who provided me great preparation through some fantastic coursework over
+the years. I give special thanks to Jure Leskovec's CS 224W network
+analysis where I learned many of the graph analysis techniques used in
+this thesis.
+
+\afterpreface
+
+\include{tex-out/00_introduction}
+
+\include{tex-out/01_describing_models}
+
+\include{tex-out/02_zollman-models}
+
+\include{tex-out/03_implementation}
+
+\include{tex-out/04_graph_selection}
+
+\include{tex-out/05_empirical_network_modeling}
+
+\include{tex-out/06_conclusion}
+
+\appendix
+
+\include{tex-out/08_code_data}
+
+\printbibliography
+
+\end{document}

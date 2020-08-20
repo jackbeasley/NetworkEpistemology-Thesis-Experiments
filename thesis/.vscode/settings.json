@@ -1,0 +1,83 @@
+{
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/source/05_empirical_network_modeling.md"
+            ],
+            "config": {
+                "audience": "knowledgeable",
+                "dialect": "american",
+                "domain": "academic",
+                "emotions": [],
+                "goals": [
+                    "inform",
+                    "describe",
+                    "convince"
+                ],
+                "emotion": "mild"
+            }
+        }
+    ],
+    "cSpell.words": [
+        "APA's",
+        "Abrahamsen's",
+        "Bing's",
+        "Bruner",
+        "CRISPR",
+        "CSVs",
+        "Clarivate",
+        "Goyal",
+        "Goyal's",
+        "Latour",
+        "Navier",
+        "Neighbours",
+        "Neuroscientists",
+        "Rosenstock",
+        "SCCs",
+        "Strevens",
+        "Subgraphs",
+        "Tabery's",
+        "WCCs",
+        "Winsberg's",
+        "Zollman",
+        "Zollman's",
+        "bibliometric",
+        "broder",
+        "causings",
+        "convergeprobdensity",
+        "convergespeed",
+        "dataset",
+        "datasets",
+        "degdist",
+        "discretize",
+        "ebenchmark",
+        "kitcher",
+        "manipulationist",
+        "morphometry",
+        "nbenchmark",
+        "networknec",
+        "networkscc",
+        "nodesvdensity",
+        "pepticprog",
+        "performant",
+        "semithick",
+        "sinha",
+        "skyrms",
+        "stackrel",
+        "subfields",
+        "subgraph",
+        "subseteq",
+        "texttt",
+        "tikzpicture",
+        "tikzset",
+        "usetikzlibrary",
+        "wilhite",
+        "winsberg"
+    ],
+    "grammarly.userWords": [
+        "csv",
+        "manipulationist",
+        "netLogo",
+        "nodesvdensity"
+    ]
+}

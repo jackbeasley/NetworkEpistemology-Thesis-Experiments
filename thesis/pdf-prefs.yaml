@@ -1,0 +1,10 @@
+variables:
+  title: "An Exploration of the Foundations of Simulation and Modeling in Philosophy"
+  author: Jack Beasley
+  fontsize: 12pt
+  papersize: letter
+  documentclass: report
+  suppress-bibliography: true
+  header-includes: |
+    \usepackage{tikz}
+    \usetikzlibrary{arrows}
